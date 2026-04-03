@@ -161,6 +161,13 @@ a:hover { color: var(--orange-dark); }
     gap: 32px;
 }
 
+/* Center the 5th card when it's alone on the last row */
+.feature-card:last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+    max-width: calc(50% - 16px);
+    margin: 0 auto;
+}
+
 .feature-card {
     background: var(--gray-50);
     border-radius: var(--radius);
