@@ -96,6 +96,30 @@ a:hover { color: var(--orange-dark); }
     font-size: 16px;
 }
 
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn-tip-nav {
+    display: inline-block;
+    background: transparent;
+    color: var(--gray-700);
+    border: 1.5px solid #d1d5db;
+    border-radius: var(--radius);
+    padding: 10px 18px;
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: border-color 0.2s, color 0.2s;
+}
+
+.btn-tip-nav:hover {
+    border-color: var(--orange);
+    color: var(--orange);
+}
+
 /* ===== Hero ===== */
 .hero {
     padding: 80px 0 60px;
