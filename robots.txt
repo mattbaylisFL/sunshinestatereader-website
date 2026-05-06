@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mattbaylisfl.github.io/sunshinestatereader-website/sitemap.xml
