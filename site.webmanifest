@@ -1,0 +1,25 @@
+{
+    "name": "Sunshine State Reader",
+    "short_name": "SSYRA Reader",
+    "description": "Track your SSYRA reading progress. Log books, earn achievements, count down to vote day. Free for grades K-2, 3-5, and 6-8.",
+    "start_url": "./",
+    "display": "browser",
+    "theme_color": "#F2B33C",
+    "background_color": "#FFFFFF",
+    "icons": [
+        {
+            "src": "assets/appicon.png",
+            "sizes": "256x256",
+            "type": "image/png",
+            "purpose": "any"
+        }
+    ],
+    "related_applications": [
+        {
+            "platform": "itunes",
+            "url": "https://apps.apple.com/app/id6761107134",
+            "id": "6761107134"
+        }
+    ],
+    "prefer_related_applications": true
+}

@@ -1,0 +1,16 @@
+# Sunshine State Reader
+
+> An iOS reading-progress tracker for the Sunshine State Young Readers Award (SSYRA) program. Log books read, watch progress toward your "earned vote" threshold (3 books), and count down to vote day. Supports SSYRA Jr. (grades K-2, 20 books), SSYRA (grades 3-5, 15 books), and SSYRA 6-8 (15 books).
+
+Sunshine State Reader is built for Florida elementary and middle-school students participating in the SSYRA program, plus their parents and teachers. The app tracks current-page progress per book, surfaces achievements (first book, halfway done, speed reader), and uses daily reminders + vote-day countdown to keep readers engaged through the full reading year.
+
+The app is independent — not affiliated with or endorsed by the Florida Association for Media in Education (FAME) or the official SSYRA program.
+
+## Key pages
+
+- [Home](https://mattbaylisfl.github.io/sunshinestatereader-website/): Features, screenshots, grade-level breakdown.
+- [Privacy policy](https://mattbaylisfl.github.io/sunshinestatereader-website/privacy.html)
+
+## Apps
+
+- [Sunshine State Reader on the App Store](https://apps.apple.com/app/id6761107134): iPhone & iPad, free download.
