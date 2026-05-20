@@ -260,16 +260,19 @@ a:hover { color: var(--orange-dark); }
 }
 
 .preview-wrapper {
-    max-width: 500px;
+    max-width: 360px;
     margin: 0 auto;
-    border-radius: 16px;
+    border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    aspect-ratio: 884 / 720;
 }
 
 .preview-wrapper video {
     width: 100%;
+    height: 100%;
     display: block;
+    object-fit: cover;
 }
 
 /* ===== Grade Levels ===== */
