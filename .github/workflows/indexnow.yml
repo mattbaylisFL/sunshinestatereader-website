@@ -1,0 +1,37 @@
+name: IndexNow ping
+
+# Triggers:
+#   page_build       — fires when GitHub Pages finishes (re)building the site
+#                       after a push to main. This is the right hook for the
+#                       legacy "deploy from branch" Pages mode this repo uses.
+#   workflow_dispatch — manual run from the Actions tab; supports force_all
+#                       to re-submit every URL in sitemap.xml (default behavior
+#                       only submits URLs whose <lastmod> matches today).
+on:
+  page_build:
+  workflow_dispatch:
+    inputs:
+      force_all:
+        description: "Submit every URL in sitemap.xml regardless of lastmod"
+        required: false
+        default: "false"
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    # On page_build, only run on successful builds — don't ping if Pages
+    # failed to deploy.
+    if: github.event_name == 'workflow_dispatch' || github.event.build.status == 'built'
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Ping IndexNow
+        env:
+          FORCE_ALL: ${{ github.event.inputs.force_all == 'true' && '1' || '' }}
+        run: node tools/ping-indexnow.mjs

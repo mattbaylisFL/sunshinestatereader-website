@@ -1,0 +1,9 @@
+{
+  "name": "sunshinestatereader-website",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "ping:indexnow": "node tools/ping-indexnow.mjs",
+    "ping:indexnow:force": "FORCE_ALL=1 node tools/ping-indexnow.mjs"
+  }
+}
